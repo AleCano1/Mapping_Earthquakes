@@ -78,7 +78,7 @@ then, we replace the marker variable(which we use d to map one location) with th
         
   As before, the map's style is mapbox/dark-v10, and the result was:
   
-  <img width="576" alt="multiple points" src="https://user-images.githubusercontent.com/96165500/185015759-e23a1c92-cbcb-483d-9d3a-a79dda4b82fb.png">
+  <img width="524" alt="multiple points" src="https://user-images.githubusercontent.com/96165500/185016119-840dc5ed-2dc3-4df7-ad98-15d36f71eb87.png">
   
 ## Summary
 
