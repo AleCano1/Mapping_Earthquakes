@@ -20,6 +20,11 @@ For each map we create the html file, there were prepared the page adding an Lea
  
  The div element, was added with the id tag for the map. Also, we added a css file to set the style for our map on our index.html page. Then, we need to ask to the html page to read the css file, so we add a link script. 
  Also, we created a two javascript files, one for the API key and one for configure the map, is this last file we created the map object and the tile layer Then we add our 'graymap' tile layer to the map. 
+ 
+ The structure of the folder for eah map is:
+ 
+ <img width="211" alt="structure" src="https://user-images.githubusercontent.com/96165500/185016412-88e99017-fce5-4140-987f-568f6fcf9ce1.png">
+
 
 
 ## Results 
@@ -80,6 +85,8 @@ then, we replace the marker variable(which we use d to map one location) with th
   
   <img width="524" alt="multiple points" src="https://user-images.githubusercontent.com/96165500/185016119-840dc5ed-2dc3-4df7-ad98-15d36f71eb87.png">
   
+* **4.-Map Lines** 
+
 ## Summary
 
 ### Links
