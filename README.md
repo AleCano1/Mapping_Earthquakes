@@ -11,7 +11,7 @@ The purpose of this project is to visually show the differences between the magn
 * Mapbox map
 * API request
 
-## Explore Data
+## Data Exploration
 First, for each map we create the html file, there were prepared the page adding an Leaflet CSS and a LEaflet Javascript sections. The Leaflet CSS and JavaScript files we added to the index.html file are referred to as content delivery networks (CDNs). Also we added the next code,
     
     <!-- The div that holds our map -->
@@ -22,7 +22,7 @@ First, for each map we create the html file, there were prepared the page adding
 
 
 ## Results 
-* **1.- Simple Map **  
+* **1.- Simple Map**  
 
 The first map object, was a simple map, created with a zoom and center level.
 
@@ -32,7 +32,7 @@ In this case, the map's style is mapbox/streets-v11, and the result was:
 
 <img width="401" alt="simple_map" src="https://user-images.githubusercontent.com/96165500/185008392-774ae8ba-0924-4b19-be47-14bbd5db86e2.png">
 
-* 2.- ** Map a single Point**  
+* **2.-Map a single Point**  
 
 ## Summary
 
