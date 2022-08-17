@@ -36,18 +36,49 @@ In this case, the map's style is mapbox/streets-v11, and the result was:
 * **2.-Map a single Point** 
 The second map object, was a map witha single point created with a zoom and center level but also, add a circle marker to the map.
 
-     //  Add a marker to the map for Los Angeles, California.
-     L.circleMarker([34.0522, -118.2437], {
-        radius: 300,
-        color: 'black',
-        fillColor: '#fffa1'
-     }).addTo(map);
+        //  Add a marker to the map for Los Angeles, California.
+        L.circleMarker([34.0522, -118.2437], {
+           radius: 300,
+           color: 'black',
+           fillColor: '#fffa1'
+        }).addTo(map);
 
 In this case, the map's style is mapbox/dark-v10, and the result was:
 
-<img width="567" alt="single_point" src="https://user-images.githubusercontent.com/96165500/185013101-c1849429-7df5-456c-953d-68b1983c6e9a.png">
+<img width="551" alt="single_point" src="https://user-images.githubusercontent.com/96165500/185013992-a218d3d5-797d-4a58-92b3-a5424ddffa90.png">
 
+* **3.-Map with multiple Points** 
 
+In this map, we added a javascript file called cities.js and we add an array of cities, this is part of the code:
+
+        // An array containing each city's location, state, and population.
+        let cities = [{
+         location: [40.7128, -74.0059],
+         city: "New York City",
+         state: "NY",
+         population: 8398748
+         },
+
+then, we replace the marker variable(which we use d to map one location) with the cities variable, for used the reference of five most populous cities array. Next, we need to iterate through each city object and add each city location to the marker() function, which will, in turn, be added to the map. Then, we added each city's location to the map by adding the location to the marker() function. To add data from each object in the cities array, we'll use Leaflet's bindPopup() method on the marker() function. and format the population with a thousands separator by using the toLocaleString() method on the city.population in the bindPopup() method, like this:
+
+        // Get data from cities.js
+        let cityData = cities;
+
+        // Loop through the cities array and create one marker for each city.
+        cityData.forEach(function(city) {
+           console.log(city)
+           L.circleMarker(city.location,{
+                radius: city.population/100000,
+                color: 'orange',
+                lineweight: 4
+           })
+           .bindPopup("<h2>" + city.city + ", " + city.state + "</h2> <hr> <h3>Population " + city.population.toLocaleString() + "</h3>")
+           .addTo(map);
+        });
+        
+  As before, the map's style is mapbox/dark-v10, and the result was:
+  
+  
 ## Summary
 
 ### Links
