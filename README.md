@@ -24,8 +24,28 @@ For each map we create the html file, there were prepared the page adding an Lea
  The structure of the folder for eah map is:
  
  <img width="211" alt="structure" src="https://user-images.githubusercontent.com/96165500/185016412-88e99017-fce5-4140-987f-568f6fcf9ce1.png">
-
-
+ 
+ Other option is using a GeoJSON data, JavaScript Object Notation(JSON), specially to host graphical information, for this project is reprsented by a geometry object, features object, or collection of features like the next code, is a features object that has a geometry object.
+ 
+        // Add GeoJSON data.
+        let sanFranAirport =
+        {"type":"FeatureCollection","features":[{
+            "type":"Feature",
+            "properties":{
+                "id":"3469",
+                "name":"San Francisco International Airport",
+                "city":"San Francisco",
+                "country":"United States",
+                "faa":"SFO",
+                "icao":"KSFO",
+                "alt":"13",
+                "tz-offset":"-8",
+                "dst":"A",
+                "tz":"America/Los_Angeles"},
+                "geometry":{
+                    "type":"Point",
+                    "coordinates":[-122.375,37.61899948120117]}}
+        ]};
 
 ## Results 
 * **1.- Simple Map**  
@@ -86,7 +106,7 @@ then, we replace the marker variable(which we use d to map one location) with th
   <img width="524" alt="multiple points" src="https://user-images.githubusercontent.com/96165500/185016119-840dc5ed-2dc3-4df7-ad98-15d36f71eb87.png">
   
 * **4.-Map Lines** 
-For map Line, we created a code with the coordinates for each point to be used in the line.
+For map Line, we created a code with the coordinates for each point to be used in the polyline.
 
         // Coordinates for each point to be used in the line.
         let line = [
@@ -94,7 +114,14 @@ For map Line, we created a code with the coordinates for each point to be used i
             [30.1974292,-97.6663058],
             [43.681727, -79.612049]
         ];
-In this case, we used teh style mapbox/satellite-streets-v11, the result is:
+In this case, we used the style mapbox/satellite-streets-v11, the result is:
+
+<img width="829" alt="map lines" src="https://user-images.githubusercontent.com/96165500/185264410-f1048e20-4524-4efb-95ea-2ee9e057665e.png">
+
+* **5.-Mapping GeoJSON Points** 
+
+In this map we choose the style mapbox/navigation-night-v1:
+
 
 
 ## Summary
