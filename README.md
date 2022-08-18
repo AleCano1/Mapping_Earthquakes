@@ -64,8 +64,17 @@ For a **Mapping GeoJSON Points** we collect the coordinates of the airport of Sa
 
 <img width="557" alt="Los Angeles" src="https://user-images.githubusercontent.com/96165500/185266526-776c1abd-d9d1-4ed3-a08b-55a268bcb300.png">
 
-After some maps, we got the map that shows the differences between the magnitudes of earthquakes all over the world for the last seven days, having the next result:
+After some map, there were created the map that shows the differences magnitudes of earthquakes all over the world for the last seven days, having the next result:
 
+MAAAP
+
+The result is in real time, so the result will change eventually. Continue with the image with can see that the map shows that in México there were a earthquake with a 5.2 magnutude, showed in a red circle, that means a big magnitude. 
+
+In other part of the world in China there was an Eartquake of 5.5 of Maginitude in China and is showed in a big circle with the color red.
+
+MAP
+
+In this last map, is the most complete map, where we can can observe a Tectonic plate data viasually in a map with multiple lines, and was added  a circle markers based on the magnitude of earthquake, and as we can see there are not only twor options of style maps, there are three options (Streets, Satellite and Navigation Night). In this map with can choose to visualize the Earquakes, the Tectonic Plates, the Major Eartquakes, only two options or all.
 
 
 ## Summary
@@ -73,4 +82,4 @@ After some maps, we got the map that shows the differences between the magnitude
 As we can see is a long way to visualizte the geographical information and customize the maps, so it depends what are particullary the client need, in this project I strated with a simple map and finished with a more complete map that shows different eartquake points that the companies can use to predict future disasters. 
 
 ### Links
-For more information of USGS website, visit: 
+For more information about Earthquakes, visit of USGS website: https://earthquake.usgs.gov/
