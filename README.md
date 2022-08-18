@@ -86,6 +86,16 @@ then, we replace the marker variable(which we use d to map one location) with th
   <img width="524" alt="multiple points" src="https://user-images.githubusercontent.com/96165500/185016119-840dc5ed-2dc3-4df7-ad98-15d36f71eb87.png">
   
 * **4.-Map Lines** 
+For map Line, we created a code with the coordinates for each point to be used in the line.
+
+        // Coordinates for each point to be used in the line.
+        let line = [
+            [37.6213, -122.3790],
+            [30.1974292,-97.6663058],
+            [43.681727, -79.612049]
+        ];
+In this case, we used teh style mapbox/satellite-streets-v11, the result is:
+
 
 ## Summary
 
