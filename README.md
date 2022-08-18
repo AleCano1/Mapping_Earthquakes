@@ -122,7 +122,23 @@ In this case, we used the style mapbox/satellite-streets-v11, the result is:
 
 In this map we choose the style mapbox/navigation-night-v1:
 
+<img width="557" alt="Los Angeles" src="https://user-images.githubusercontent.com/96165500/185266526-776c1abd-d9d1-4ed3-a08b-55a268bcb300.png">
 
+* **5.-Mapping GeoJSON Multiple Points** 
+
+For this map we added a part of code that the user can choose between two tile layer, one was the background of the ma and the other is the option of the map.
+And then create a base layer to hold both maps.
+
+// Create a base layer that holds both maps.
+let baseMaps = {
+  Street: streets,
+  Dark: dark
+};
+
+For the backgrpund of the map we used mapbox/streets-v11/ that is the "street" variable and mapbox/dark-v10/ is the option "dark", the map are these:
+
+
+The same map but with dark option:
 
 ## Summary
 
