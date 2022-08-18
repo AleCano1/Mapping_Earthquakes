@@ -137,10 +137,15 @@ let baseMaps = {
 
 For the backgrpund of the map we used mapbox/streets-v11/ that is the "street" variable and mapbox/dark-v10/ is the option "dark", the map are these:
 
+<img width="879" alt="options map" src="https://user-images.githubusercontent.com/96165500/185267297-8b2978f5-a9a7-439f-ad71-6fde86dd2d86.png">
 
 The same map but with dark option:
 
+<img width="666" alt="dark map" src="https://user-images.githubusercontent.com/96165500/185267304-7f92f0df-a01d-44b0-a372-272f42b2682f.png">
+
 ## Summary
+
+As we can see is a long way to visualizte the geographical information and customize the maps, so it depends what are particullary the client need, in this project I strated with a simple map and finished with a more complete map that shows different eartquake points that the companies can use to predict future disasters. 
 
 ### Links
 For more information of USGS website, visit: 
